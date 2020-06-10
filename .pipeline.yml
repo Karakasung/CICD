@@ -1,8 +1,0 @@
-steps:
-    - name: ":windows: Build and Sign"
-      branches: "master develop feature/* *.*.*"
-      # agents:
-      #   - queue: windows
-      command: 
-        - touch file1
-        - touch file2
