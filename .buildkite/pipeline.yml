@@ -1,9 +1,15 @@
 steps:
     - name: ":windows: Build and Sign"
       branches: "master develop feature/* *.*.*"
-      # agents:
-      #   - queue: windows
+#       agents:
+#         - os: windows
       command: 
       #  - yarn install
       #  - yarn release
         - C:\buildkite-agent\scripts\test.bat
+        - buildkite artifact upload test_dir\*
+#     - name: ":linux:" Pull Artifact
+#       branches: "master develop feature/* *.*.*"
+#       agents:
+#         - os: linux
+#       command: /var/lib/buildkite-agent/scripts/photoshop_deploy.sh
