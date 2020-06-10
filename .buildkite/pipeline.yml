@@ -3,11 +3,9 @@ steps:
       branches: "master develop feature/* *.*.*"
 #       agents:
 #         - os: windows
-      command: 
+      command: C:\buildkite-agent\scripts\test.bat
       #  - yarn install
       #  - yarn release
-        - buildkite-agent artifact upload test_dir/*
-        - C:\buildkite-agent\scripts\test.bat
 #     - name: ":linux:" Pull Artifact
 #       branches: "master develop feature/* *.*.*"
 #       agents:
