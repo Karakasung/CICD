@@ -7,7 +7,7 @@ steps:
       #  - yarn install
       #  - yarn release
         - C:\buildkite-agent\scripts\test.bat
-        - buildkite artifact upload test_dir\*
+        - buildkite-agent artifact upload test_dir\*
 #     - name: ":linux:" Pull Artifact
 #       branches: "master develop feature/* *.*.*"
 #       agents:
