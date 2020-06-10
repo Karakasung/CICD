@@ -4,5 +4,6 @@ steps:
       # agents:
       #   - queue: windows
       command: 
-        - touch file1
-        - touch file2
+      #  - yarn install
+      #  - yarn release
+        - C:\buildkite-agent\scripts\test.bat
